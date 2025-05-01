@@ -828,6 +828,7 @@ PRODUCT_PACKAGES += \
     liblbs_core \
     libloc_api_v02 \
     libsdm-disp-apis.qti \
+    CACertService \
     CneApp \
     IWlanService \
     TimeService \
