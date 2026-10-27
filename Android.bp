@@ -565,3 +565,23 @@ cc_prebuilt_binary {
 	relative_install_path: "hw",
 	soc_specific: true,
 }
+
+cc_prebuilt_library_shared {
+	name: "libwvhidl",
+	owner: "motorola",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm64: {
+			srcs: ["proprietary/vendor/lib64/libwvhidl.so"],
+			shared_libs: [
+				"libcrypto_shim",
+			],
+		},
+	},
+	compile_multilib: "64",
+	check_elf_files: false,
+	prefer: true,
+	soc_specific: true,
+}
