@@ -417,6 +417,7 @@ PRODUCT_PACKAGES += \
     libsettings \
     libslimclient \
     libsoc_helper \
+    libswvdec \
     libsystem_health_mon \
     libthermalclient \
     libwvhidl \
@@ -532,7 +533,7 @@ PRODUCT_PACKAGES += \
     libmmrtpdecoder \
     libmmrtpencoder \
     com.qualcomm.qti.ant@1.0 \
-    vendor.qti.ims.callinfo@1.0 \
+    vendor.qti.ims.callinfo@1.0_system_ext \
     CACertService \
     CneApp \
     IWlanService \
