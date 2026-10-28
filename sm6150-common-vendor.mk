@@ -221,6 +221,7 @@ PRODUCT_PACKAGES += \
     libcneapiclient \
     libcneoplookup \
     libcneqmiutils \
+    libconfigdb \
     libcpion \
     libdiag \
     libdisplayqos \
@@ -240,6 +241,7 @@ PRODUCT_PACKAGES += \
     libhdcpsrm \
     libhdr_tm \
     libidl \
+    libkeymasterdeviceutils \
     liblistensoundmodel2 \
     libllvm-glnext \
     libllvm-qcom \
@@ -249,6 +251,8 @@ PRODUCT_PACKAGES += \
     libminksocket \
     libmmosal_vendor \
     libmulawdec \
+    libnetmgr \
+    libnetmgr_common \
     libnlnetmgr \
     liboemcrypto \
     libops \
@@ -256,6 +260,7 @@ PRODUCT_PACKAGES += \
     libpvr \
     libqcbor \
     libqcci_legacy \
+    libqcrilFramework \
     libqdi \
     libqdp \
     libqisl \
@@ -268,8 +273,10 @@ PRODUCT_PACKAGES += \
     libqmi_encdec \
     libqmi_legacy \
     libqmiservices \
+    libqrtr \
     libqseed3 \
     librcc \
+    libril-qc-logger \
     librpmb \
     libscveCommon \
     libscveCommon_stub \
@@ -307,12 +314,18 @@ PRODUCT_PACKAGES += \
     vendor.qti.data.factory@2.1 \
     vendor.qti.data.factory@2.2 \
     vendor.qti.data.factory@2.3 \
+    vendor.qti.data.mwqem@1.0 \
     vendor.qti.data.slm@1.0 \
     vendor.qti.hardware.cacert@1.0 \
+    vendor.qti.hardware.data.cne.internal.api@1.0 \
+    vendor.qti.hardware.data.cne.internal.constants@1.0 \
+    vendor.qti.hardware.data.cne.internal.server@1.0 \
     vendor.qti.hardware.data.dynamicdds@1.0 \
     vendor.qti.hardware.data.latency@1.0 \
+    vendor.qti.hardware.data.lce@1.0 \
     vendor.qti.hardware.data.qmi@1.0 \
     vendor.qti.hardware.dsp@1.0 \
+    vendor.qti.hardware.mwqemadapter@1.0 \
     vendor.qti.hardware.scve.objecttracker@1.0 \
     vendor.qti.hardware.scve.panorama@1.0 \
     vendor.qti.hardware.sensorscalibrate@1.0 \
@@ -321,7 +334,18 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.vpp@1.1 \
     vendor.qti.hardware.vpp@1.2 \
     vendor.qti.hardware.vpp@1.3 \
+    vendor.qti.ims.callcapability@1.0 \
+    vendor.qti.ims.callinfo@1.0 \
+    vendor.qti.ims.factory@1.0 \
+    vendor.qti.ims.factory@1.1 \
+    vendor.qti.ims.rcsconfig@1.0 \
+    vendor.qti.ims.rcsconfig@1.1 \
+    vendor.qti.ims.rcsconfig@2.0 \
+    vendor.qti.ims.rcsconfig@2.1 \
+    vendor.qti.imsrtpservice@3.0-service-Impl \
     vendor.qti.imsrtpservice@3.0_vendor \
+    vendor.qti.latency@2.0 \
+    vendor.qti.latency@2.1 \
     btaudio_offload_if \
     audio.bluetooth_qti.default \
     vendor.qti.hardware.bluetooth_audio@2.0-impl \
@@ -354,8 +378,6 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.servicetracker@1.2-impl \
     libGPQTEEC_vendor \
     libGPTEE_vendor \
-    libOmxSwVdec \
-    libOmxSwVencMpeg4 \
     libQTEEConnector_vendor \
     libadropbox \
     libadspd \
@@ -366,7 +388,6 @@ PRODUCT_PACKAGES += \
     libbtnv \
     libcdfw \
     libcdfw_remote_api \
-    libconfigdb \
     libdataitems \
     libdisp-aba \
     libdsi_netctrl \
@@ -378,7 +399,6 @@ PRODUCT_PACKAGES += \
     libizat_client_api \
     libizat_core \
     libjnihelper \
-    libkeymasterdeviceutils \
     libkeymasterprovision \
     libkeymasterutils \
     liblbs_core \
@@ -392,24 +412,19 @@ PRODUCT_PACKAGES += \
     libmdmcutback \
     libmm-hdcpmgr \
     libmotext_inf \
-    libnetmgr \
-    libnetmgr_common \
     libnetmgr_nr_fusion \
     libnetmgr_rmnet_ext \
     libpdmapper \
     libpdnotifier \
     libqcc_file_agent \
     libqcmaputils \
-    libqcrilFramework \
     libqcrildatactl \
     libqdma_file_agent \
     libqmi_csvt_srvc \
     libqmimotext \
-    libqrtr \
     libqsocket \
     libqtikeymaster4 \
     libril-qc-hal-qmi \
-    libril-qc-logger \
     libril-qc-ltedirectdisc \
     libril-qc-radioconfig \
     libril-qcril-hook-oem \
@@ -417,7 +432,6 @@ PRODUCT_PACKAGES += \
     libsettings \
     libslimclient \
     libsoc_helper \
-    libswvdec \
     libsystem_health_mon \
     libthermalclient \
     libwvhidl \
@@ -434,7 +448,6 @@ PRODUCT_PACKAGES += \
     vendor.display.color@1.4 \
     vendor.display.color@1.5 \
     vendor.display.postproc@1.0 \
-    vendor.qti.data.mwqem@1.0 \
     vendor.qti.gnss@1.0 \
     vendor.qti.gnss@1.1 \
     vendor.qti.gnss@1.2 \
@@ -446,15 +459,10 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.alarm@1.0 \
     vendor.qti.hardware.bluetooth_sar@1.0 \
     vendor.qti.hardware.bluetooth_sar@1.1 \
-    vendor.qti.hardware.data.cne.internal.api@1.0 \
-    vendor.qti.hardware.data.cne.internal.constants@1.0 \
-    vendor.qti.hardware.data.cne.internal.server@1.0 \
     vendor.qti.hardware.data.connection@1.0 \
     vendor.qti.hardware.data.connection@1.1 \
     vendor.qti.hardware.data.iwlan@1.0 \
-    vendor.qti.hardware.data.lce@1.0 \
     vendor.qti.hardware.fm@1.0_vendor \
-    vendor.qti.hardware.mwqemadapter@1.0 \
     vendor.qti.hardware.qccsyshal@1.0 \
     vendor.qti.hardware.qteeconnector@1.0 \
     vendor.qti.hardware.radio.am@1.0 \
@@ -487,17 +495,6 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.radio.uim_remote_client@1.1 \
     vendor.qti.hardware.radio.uim_remote_client@1.2 \
     vendor.qti.hardware.radio.uim_remote_server@1.0 \
-    vendor.qti.ims.callcapability@1.0 \
-    vendor.qti.ims.callinfo@1.0 \
-    vendor.qti.ims.factory@1.0 \
-    vendor.qti.ims.factory@1.1 \
-    vendor.qti.ims.rcsconfig@1.0 \
-    vendor.qti.ims.rcsconfig@1.1 \
-    vendor.qti.ims.rcsconfig@2.0 \
-    vendor.qti.ims.rcsconfig@2.1 \
-    vendor.qti.imsrtpservice@3.0-service-Impl \
-    vendor.qti.latency@2.0 \
-    vendor.qti.latency@2.1 \
     vendor_lib_rfsa_adsp_capi_v2_aptX_Classic_so \
     vendor_lib_rfsa_adsp_capi_v2_aptX_HD_so \
     vendor_lib_rfsa_adsp_libVC1Dec_so \
