@@ -5,7 +5,6 @@
 soong_namespace {
     imports: [
         "device/motorola/sm6150-common",
-        "hardware/dolby",
         "hardware/motorola",
         "hardware/qcom/sm8150/gps",
         "hardware/qcom-caf/sm8150",
